@@ -71,6 +71,7 @@ body {
 /* Кнопки */
 
 .btn {
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -107,6 +108,7 @@ body {
     color: #fff;
 }
 .bg-title {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -114,13 +116,14 @@ body {
     color: #FFFFFF;
 }
 .bg-link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.bg .link:hover,
-.bg .link:focus, {
+.bg-link:hover,
+.bg-link:focus {
     color: var(--accent-color);
-}    
+}
