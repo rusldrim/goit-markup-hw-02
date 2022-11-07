@@ -77,6 +77,8 @@ body {
     background-color: #2F303A;;
 }
 .hat-text {
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -85,26 +87,58 @@ body {
     background-color: #2196F3;
 }
 /* Особливості */
-
-
-
-
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.features-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575; 
+}
+/* Чим ми займаємось */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+/* Команда */
+.team, .team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+.team-text {
+    font-weight: 400;
+    color: #757575;
+}
 
 
 /* ПОРТФОЛІО */
 /* Кнопки */
 
-.btn {
+.btn, .btn-current {
     cursor: pointer;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    background: #F5F4FA;
 }
-.btn .link:hover,
-.btn .link:focus,
-.btn .link.current {
+.btn:hover,
+.btn:focus {
     color: var(--accent-color);
+}
+.btn-current {
+    color: #FFFFFF;
+    background: #2196F3;
 }
 
 /* Розділи */
