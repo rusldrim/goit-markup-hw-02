@@ -2,6 +2,7 @@ body {
     background-color: #fff;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
+    
 }
 
 .list {
@@ -20,6 +21,14 @@ body {
     --primary-text-color: #212121;
     --text-color: #757575;
     --accent-color: #2196F3;
+    --logo-color: #000;
+    --secondary-logo-color: #fff;
+    --secondary-background-color:#2F303A;
+    --team-background-color: #F5F4FA;
+    --address-color: #FFFFFF;
+    --contacts-color: rgba(255, 255, 255, 0.6);
+    --hat-text-color: #FFFFFF;
+    --accent-background-color:#188CE8;
 }
 
 /* HEADER-ЗАГОЛОВОК */
@@ -32,9 +41,10 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none
 }
 .black {
-    color: #000;
+    color: var(--logo-color);
 }
 
 /* НАВІГАЦІЯ */
@@ -45,6 +55,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    text-decoration: none
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -65,16 +76,20 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    text-decoration: none;
 }
 /* MAIN */
 /* ШАПКА */
-.hat, .hat-title {
+.hat {
+    background-color: var(--secondary-background-color);
+}
+.hat-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2F303A;;
+    text-transform: uppercase;
+    color: var(--hat-text-color);
 }
 .hat-text {
     cursor: pointer;
@@ -83,21 +98,39 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--hat-text-color);
+    background-color: var(--accent-color);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
+.hat-text:hover,
+.hat-text:focus {
+    background-color: var(--accent-background-color);
+} 
 /* Особливості */
+.visually-hidden {
+    position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+}
 .features-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .features-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575; 
+    color: var(--text-color);
 }
 /* Чим ми займаємось */
 .title {
@@ -105,42 +138,58 @@ body {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+   
 }
 /* Команда */
-.team, .team-title {
+.team-section {
+    background-color: var(--team-background-color);
+}
+
+.team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
 .team-text {
-    font-weight: 400;
-    color: #757575;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
 }
 
 
 /* ПОРТФОЛІО */
 /* Кнопки */
 
-.btn, .btn-current {
+.btn {
     cursor: pointer;
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    background: #F5F4FA;
+    color: var(--primary-text-color);
+    background: var(--team-background-color);
+    /* box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), */
+    /* 0px 1px 2px rgba(0, 0, 0, 0.08), */
+    /* 0px 2px 2px rgba(0, 0, 0, 0.12); */
+    
 }
 .btn:hover,
 .btn:focus {
-    color: var(--accent-color);
-}
-.btn-current {
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--hat-text-color);
+    background-color: var(--accent-color);
 }
 
+
 /* Розділи */
+.project-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+
 
 .project-title {
     font-weight: 700;
@@ -158,24 +207,25 @@ body {
 /* ПІДВАЛ */
 
 .bg {
-    background-color: #2F303A;
+    background-color: var(--secondary-background-color);
 }
 .white {
-    color: #fff;
+    color: var(--secondary-logo-color);
 }
 .bg-title {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color:var(--address-color);
 }
 .bg-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contacts-color);
+    text-decoration: none;
 }
 .bg-link:hover,
 .bg-link:focus {
