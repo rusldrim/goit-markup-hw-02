@@ -150,12 +150,14 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    background-color: var(--hat-text-color);
 }
 .team-text {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    background-color: var(--hat-text-color);
 }
 
 
